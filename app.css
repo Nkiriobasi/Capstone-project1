@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root{
+	--Open-sans-fonts: 'Open Sans', sans-serif;
+	--Raleway-fonts: 'Raleway', sans-serif;
+	--Main-background: hsl(218, 28%, 13%);
+	--Intro-emailSignup-background: hsl(217, 28%, 15%);
+	--Footer-background: hsl(216, 53%, 9%);
+	--Testimonials-background: hsl(219, 30%, 18%);
+	--White: hsl(0, 0%, 100%);
+	--Blue: hsl(198, 60%, 50%);
+	--cyan: hsl(176, 68%, 64%);
+}
+ 
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: auto;
+    background-color: var(--Main-background);
+    margin-top: 0.625rem;
+    font-size: 0.875rem;
+    color: var(--White);
+    font-family: var(--Open-sans-fonts);
+}
+
+
+
+/* Navbar Section */
+.navbar{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	padding: 0.625rem 1.25rem 1.25rem;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar .nav__logo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.navbar .nav__logo .logo{
+	width: 3.75rem;
+	height: 2.5rem;
+}
+.navbar .nav__logo h2{
+	font-size: 2.25rem;
+	font-family: var(--Raleway-fonts);
+	font-weight: 600;
+}
+
+
+.navbar .nav__links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+.navbar .nav__links li{
+	margin-left: 1.25rem;
+	text-transform: capitalize;
+	font-size: 1rem;
+	font-family: var(--Raleway-fonts);
+	font-weight: 300;
+}
+
+
+
+/* First Section */
+.section1{
+    width: 100%;
+    height: auto;
+    padding: 2rem 4rem;
+    margin-bottom: 1.75rem;
+}
+.section1 .files__container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.section1 .files__container img{
+	width: 500px;
+	height: auto;
+	margin-bottom: 1.25rem;
+	visibility: hidden;
+}
+.section1 .files__container h2{
+	font-size: 2.25rem;
+	text-align: center;
+	margin-bottom: 1.25rem;
+	font-family: var(--Raleway-fonts);
+	font-weight: 600;
+	line-height: 1.2;
+}
+.section1 .files__container p{
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+}
+.section1 .files__container .btn{
+	margin-top: 1.25rem;
+	width: 250px;
+	padding: 1rem 1rem;
+	border-radius: 25px;
+	border: none;
+	color: var(--White);
+	background-color: var(--cyan);
+	font-size: 1.25rem;
+	text-transform: capitalize;
+}
+
+
+
+/* Second Section */
+.section2{
+	width: 100%;
+	height: auto;
+	padding: 3rem 3rem;
+	margin-bottom: 3rem;
+}
+.section2 .flex__container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.section2 .flex__container .flex__boxes .flex__item{
+    text-align: center;
+}
+.section2 .flex__container .flex__boxes .mt{
+	margin-top: 5rem;
+}
+.section2 .flex__container .flex__boxes .flex__item img{
+	margin-bottom: 0.75rem;
+}
+.section2 .flex__container .flex__boxes .flex__item h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+	font-family: var(--Raleway-fonts);
+	line-height: 1;
+	margin-bottom: 0.5rem;
+}
+.section2 .flex__container .flex__boxes .flex__item p{
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+
+
+/* Third Section */
+.section3{
+	width: 100%;
+	height: auto;
+	margin-bottom: 4rem;
+}
+.section3 .productive__container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.section3 .productive__container img{
+	width: 500px;
+	height: auto;
+	visibility: hidden;
+	padding-right: 2rem;
+}
+.section3 .productive__container .productive__text h4{
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-family: var(--Raleway-fonts);
+}
+.section3 .productive__container .productive__text p{
+	line-height: 1.5;
+	margin-bottom: 0.75rem;
+	font-size: 1rem;
+	font-weight: 300;
+}
+.section3 .productive__container .productive__text a{
+	color: var(--cyan);
+	text-decoration: none;
+	border-bottom: 1px solid var(--cyan);
+}
+.section3 .productive__container .productive__text .arrow__icon{
+	color: var(--cyan);
+}
+
+
+
+
+/* Fourth Section */
+.section4{
+	width: 100%;
+	height: 350px;
+	padding: 2rem 3rem;
+}
+.section4 .testimonial__grid__container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.section4 .testimonial__grid__container .grid__item{
+	width: 100%;
+	max-width: 350px;
+	background: var(--Testimonials-background);
+	padding: 2rem 1rem;
+	border-radius: 5px;
+}
+.section4 .testimonial__grid__container .grid__item p{
+	width: 100%;
+	font-size: 0.75rem;
+	line-height: 1.5;
+	font-weight: 300;
+	/*margin-bottom: 2rem;*/
+}
+
+
+.section4 .testimonial__grid__container .grid__item .testimonial__profile{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 2rem;
+}
+.section4 .testimonial__grid__container .grid__item .testimonial__profile img{
+	margin-right: 1.5rem;
+	border-radius: 50%;
+}
+
+
+
+
+
+/* Fifth Section */
+.section5{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.section5 .signup__container{
+	width: 100%;
+	height: 200px;
+	max-width: 700px;
+	background: var(--Intro-emailSignup-background);
+	padding: 1.5rem 2rem;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.23);
+	text-align: center;
+	position: relative;
+	top: 5rem;
+}
+.section5 .signup__container h3{
+	font-size: 1.125rem;
+	font-family: var(--Raleway-fonts);
+	font-weight: 700;
+	margin-bottom: 1.125rem;
+	line-height: 1;
+}
+.section5 .signup__container p{
+	line-height: 1.5;
+	font-size: 1rem;
+	font-weight: 300;
+	margin-bottom: 1.125rem;
+}
+.section5 .signup__container .responses{
+	width: 90%;
+	height: 45px;
+	display: inline-block;
+	display: flex;
+	justify-content: space-around;
+}
+.section5 .signup__container input[type="email"]{
+	width: 100%;
+	max-width: 350px;
+	padding: 0.875rem 0.75rem;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+}
+.section5 .signup__container button{
+	width: 100%;
+	max-width: 150px;
+	text-transform: capitalize;
+	padding: 0.875rem 0.75rem;
+	border-radius: 20px;
+	border: none;
+	background-color: var(--cyan);
+	text-transform: capitalize;
+	color: var(--White);
+	font-weight: 500;
+}
+
+
+
+
+/* Footer Section */
+footer{
+	width: 100%;
+	height: 350px;
+	background-color: var(--Footer-background);
+	/*margin-top: 2rem;*/
+}
+footer i{
+	font-size: 1.125rem;
+	height: auto;
+}
+footer .footer__grid__container{
+	width: 100%;
+	height: 350px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0 2rem;
+}
+footer .footer__grid__container .xl__width{
+	width: 100%;
+	max-width: 300px;
+}
+footer .footer__grid__container .lg__width{
+	width: 100%;
+	max-width: 200px;
+	/*line-height: 2;*/
+}
+footer .footer__grid__container .sm__width{
+	width: 100%;
+	max-width: 100px;
+	/*line-height: 2;*/
+}
+footer .footer__grid__container .grid__item .logo{
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+}
+footer .footer__grid__container .grid__item .logo ion-icon{
+	
+}
+footer .footer__grid__container .grid__item .logo h2{
+	font-weight: 500;
+	font-family: var(--Raleway-fonts);
+	margin-left: 1rem;
+}
+footer .footer__grid__container .grid__item .location{
+	display: flex;
+}
+footer .footer__grid__container .grid__item .location p{
+	margin-left: 1rem;
+}
+footer .footer__grid__container .telephone{
+	display: flex;
+	align-items: center;
+}
+footer .footer__grid__container .email{
+	display: flex;
+	align-items: center;
+}
+footer .footer__grid__container .telephone p,.email p{
+	margin-left: 2rem;
+}
+footer .footer__grid__container .col__align{
+	margin-left: 3rem;
+}
+footer .footer__grid__container .row__align{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
