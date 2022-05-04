@@ -23,10 +23,22 @@ body{
 	width: 100%;
 	height: auto;
     background-color: var(--Main-background);
-    margin-top: 0.625rem;
+    margin-top: 2rem;
     font-size: 0.875rem;
     color: var(--White);
     font-family: var(--Open-sans-fonts);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--White);        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--Main-background);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--cyan);  /* creates padding around scroll thumb */
 }
 
 
@@ -36,10 +48,11 @@ body{
 	width: 100%;
 	height: 100px;
 	display: flex;
-	padding: 0.625rem 1.25rem 1.25rem;
+	padding: 1rem 2rem;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 2rem;
 }
 .navbar .nav__logo{
 	display: flex;
@@ -65,21 +78,28 @@ body{
 	list-style-type: none;
 }
 .navbar .nav__links li{
-	margin-left: 1.25rem;
+	margin-left: 2.5rem;
 	text-transform: capitalize;
 	font-size: 1rem;
-	font-family: var(--Raleway-fonts);
-	font-weight: 300;
+	font-family: var(--Open-sans-fonts);
+	font-weight: 400;
+	cursor: pointer;
 }
+.navbar .nav__links li:hover{
+	border-bottom: 1px solid var(--White);
+	font-weight: 600;
+}
+/* Navbar Section Ends */
+
 
 
 
 /* First Section */
 .section1{
     width: 100%;
-    height: 750px;
-    padding: 0 2rem;
-    margin-top: 2rem;
+    height: auto;
+    padding: 0 2rem 1rem;
+    margin-bottom: 8rem;
 }
 .section1 .files__container{
 	display: flex;
@@ -88,10 +108,10 @@ body{
 	justify-content: center;
 }
 .section1 .files__container img{
-	width: 500px;
+	width: 100%;
+	max-width: 670px;
 	height: auto;
-	margin-bottom: 1.25rem;
-	visibility: hidden;
+	margin-bottom: 2rem;
 }
 .section1 .files__container h2{
 	font-size: 2.25rem;
@@ -99,7 +119,7 @@ body{
 	margin-bottom: 1.25rem;
 	font-family: var(--Raleway-fonts);
 	font-weight: 600;
-	line-height: 1.2;
+	line-height: 1.5;
 }
 .section1 .files__container p{
 	text-align: center;
@@ -108,30 +128,42 @@ body{
 	line-height: 1.5;
 }
 .section1 .files__container .btn{
-	margin-top: 1.25rem;
-	width: 250px;
-	padding: 1rem 1rem;
-	border-radius: 25px;
+	margin-top: 1.5rem;
+	height: 70px;
+	width: 300px;
+	padding: 1rem;
+	border-radius: 35px;
 	border: none;
 	color: var(--White);
 	background-color: var(--cyan);
-	font-size: 1.25rem;
+	font-size: 1rem;
+	font-weight: 600;
 	text-transform: capitalize;
+	cursor: pointer;
 }
+.section1 .files__container .btn:hover{
+	background: hsl(176, 68%, 75%);
+}
+/* First Section Ends */
+
 
 
 
 /* Second Section */
 .section2{
 	width: 100%;
-	height: 650px;
-	padding: 0 2rem;
+	height: auto;
+	padding: 0 2rem 1rem;
+	margin-bottom: 8rem;
 }
 .section2 .flex__container{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+}
+.section2 .flex__container .flex__boxes{
+	margin: 0 4rem;
 }
 .section2 .flex__container .flex__boxes .flex__item{
     text-align: center;
@@ -140,20 +172,24 @@ body{
 	margin-top: 5rem;
 }
 .section2 .flex__container .flex__boxes .flex__item img{
-	margin-bottom: 0.75rem;
+	margin-bottom: 1rem;
+	width: 70px;
+	height: 70px;
 }
 .section2 .flex__container .flex__boxes .flex__item h3{
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: 600;
 	font-family: var(--Raleway-fonts);
 	line-height: 1;
 	margin-bottom: 0.5rem;
 }
 .section2 .flex__container .flex__boxes .flex__item p{
-	font-size: 1rem;
+	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.5;
 }
+/* Second Section Ends */
+
 
 
 
@@ -161,7 +197,8 @@ body{
 .section3{
 	width: 100%;
 	height: auto;
-	margin-bottom: 4rem;
+	padding: 0 2rem 1rem;
+	margin-bottom: 8rem;
 }
 .section3 .productive__container{
 	display: flex;
@@ -169,33 +206,47 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.section3 .productive__container img{
-	width: 500px;
+.section3 .productive__container .stay__productive__bg{
+	width: 100%;
+	max-width: 600px;
 	height: auto;
-	visibility: hidden;
-	padding-right: 2rem;
+	padding-right: 2.25rem;
 }
 .section3 .productive__container .productive__text h4{
-    font-size: 1.5rem;
-    line-height: 1;
+    font-size: 2rem;
+    max-width: 390px;
+    width: 100%;
+    line-height: 1.5;
     font-weight: 600;
     margin-bottom: 0.75rem;
     font-family: var(--Raleway-fonts);
 }
 .section3 .productive__container .productive__text p{
 	line-height: 1.5;
-	margin-bottom: 0.75rem;
-	font-size: 1rem;
+	margin-bottom: 1rem;
+	font-size: 0.9375rem;
 	font-weight: 300;
+	max-width: 500px;
+	width: 100%;
+}
+.section3 .productive__container .productive__text .link{
+    display: inline-block;
+    border-bottom: 1px solid var(--cyan);
+    width: auto;
+    line-height: 2;
+    cursor: pointer;
 }
 .section3 .productive__container .productive__text a{
 	color: var(--cyan);
 	text-decoration: none;
-	border-bottom: 1px solid var(--cyan);
+	font-size: 1rem;
 }
-.section3 .productive__container .productive__text .arrow__icon{
-	color: var(--cyan);
+.section3 .productive__container .productive__text .link .arrow__icon{
+	width: 15px;
+	height: 15px;
 }
+/* Third Section Ends */
+
 
 
 
@@ -203,28 +254,29 @@ body{
 /* Fourth Section */
 .section4{
 	width: 100%;
-	height: 300px;
-	padding: 0 2.5rem;
+	height: auto;
+	padding: 0 2rem 1rem;
+	margin-bottom: 8rem;
 }
 .section4 .testimonial__grid__container{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 }
 .section4 .testimonial__grid__container .grid__item{
 	width: 100%;
-	max-width: 350px;
+	max-width: 320px;
 	background: var(--Testimonials-background);
-	padding: 2rem 1rem;
+	padding: 2rem 1.5rem;
 	border-radius: 5px;
+	margin: 0 1rem;
 }
 .section4 .testimonial__grid__container .grid__item p{
 	width: 100%;
 	font-size: 0.75rem;
 	line-height: 1.5;
 	font-weight: 300;
-	/*margin-bottom: 2rem;*/
 }
 
 
@@ -238,7 +290,9 @@ body{
 .section4 .testimonial__grid__container .grid__item .testimonial__profile img{
 	margin-right: 1.5rem;
 	border-radius: 50%;
+	width: 25px;
 }
+/* Fourth Section Ends */
 
 
 
@@ -247,139 +301,317 @@ body{
 /* Fifth Section */
 .section5{
 	width: 100%;
-	height: 200px;
+	height: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
+	padding: 0 2rem 1rem;
 }
 .section5 .signup__container{
-	width: 100%;
-	height: 200px;
+	height: 226px;
 	max-width: 700px;
 	background: var(--Intro-emailSignup-background);
-	padding: 1.5rem 2rem;
-	border-radius: 5px;
+	padding: 2.5rem 2.5rem;
+	border-radius: 10px;
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.23);
 	text-align: center;
-	position: relative;
-	top: 5rem;
 }
 .section5 .signup__container h3{
-	font-size: 1.125rem;
+	font-size: 1.25rem;
 	font-family: var(--Raleway-fonts);
 	font-weight: 700;
-	margin-bottom: 1.125rem;
+	margin-bottom: 1.25rem;
 	line-height: 1;
 }
 .section5 .signup__container p{
 	line-height: 1.5;
-	font-size: 1rem;
+	font-size: 0.875rem;
 	font-weight: 300;
-	margin-bottom: 1.125rem;
-}
-.section5 .signup__container .responses{
-	width: 90%;
-	height: 45px;
-	display: inline-block;
-	display: flex;
-	justify-content: space-around;
+	margin-bottom: 1.25rem;
+	max-width: 660px;
+	width: 100%;
 }
 .section5 .signup__container input[type="email"]{
 	width: 100%;
-	max-width: 350px;
-	padding: 0.875rem 0.75rem;
-	border-radius: 20px;
-	border: none;
+	max-width: 400px;
+	display: inline-block;
 	outline: none;
+	border: none;
+	height: 40px;
+	border-radius: 20px;
+	padding: 0.875rem 0.875rem;
 }
 .section5 .signup__container button{
 	width: 100%;
-	max-width: 150px;
-	text-transform: capitalize;
-	padding: 0.875rem 0.75rem;
+	display: inline-block;
+	max-width: 200px;
+	margin-left: 1rem;
+	height: 40px;
 	border-radius: 20px;
+	padding: 0.75rem 0.875rem;
 	border: none;
-	background-color: var(--cyan);
-	text-transform: capitalize;
+	outline: none;
+	background: var(--cyan);
 	color: var(--White);
+	font-size: 0.875rem;
 	font-weight: 500;
+	text-transform: capitalize;
+	cursor: pointer;
 }
+.section5 .signup__container button:hover{
+	background: hsl(176, 68%, 75%);
+}
+
+/* Fifth Section Ends */
 
 
 
 
 /* Footer Section */
+i{
+	padding-right: 1rem;
+	font-size: 1rem;
+}i:hover{
+	color: var(--cyan);
+	cursor: pointer;
+}
+a{
+	line-height: 2rem;
+	text-decoration: none;
+	color: var(--White);
+	text-transform: capitalize;
+}a:hover{
+	color: var(--cyan);
+}
 footer{
 	width: 100%;
-	height: 400px;
+	height: 470px;
 	background-color: var(--Footer-background);
 	font-family: var(--Open-sans-fonts);
-	font-size: 1rem;
+	font-size: 0.875rem;
 	font-weight: 300;
+	padding: 0 2rem;
 }
-footer i{
-	font-size: 1.125rem;
-	height: auto;
+footer .footer__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+
 }
-footer .footer__grid__container{
-	width: 100%;
-	height: 400px;
+footer .footer__container .item{
+	/*margin: 0 5rem;*/
+}
+.phone__contact, .email__contact{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
-	padding: 0 2rem;
+	line-height: 2rem;
 }
-footer .footer__grid__container .location, .telephone, .email, .col__align p{
-	margin-top: 1rem;
-}
-footer .footer__grid__container .xl__width{
-	width: 100%;
-	max-width: 300px;
-}
-footer .footer__grid__container .lg__width{
-	width: 100%;
-	max-width: 200px;
-}
-footer .footer__grid__container .sm__width{
-	width: 100%;
-	max-width: 100px;
-}
-footer .footer__grid__container .grid__item .logo{
+footer .footer__container .col{
 	display: flex;
-	align-items: center;
-	font-size: 2rem;
+	flex-direction: column;
 }
-footer .footer__grid__container .grid__item .logo ion-icon{
-	
+/* Footer Section Ends */
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px){
+
+	body{
+		margin-top: 1rem;
+	}
+
+   
+    /* Navbar Section */
+    .navbar{
+	    padding: 1rem 1.75rem;
+    }
+    /* Navbar Section Ends */
+
+
+    /* First Section */
+    .section1 .files__container h2{
+    	font-size: 2rem;
+    }
+    /* First Section Ends */
+
+
+    /* Second Section */
+    .section2 .flex__container{
+	    flex-direction: column;
+    }
+    .section2 .flex__container .flex__boxes{
+	    margin: 0;
+    }
+    .section2 .flex__container .flex__boxes .mt2{
+	    margin-top: 5rem;
+    }
+    /* SEcond Section Ends */
+
+
+    /* Third Section */
+    .section3 .productive__container{
+	    flex-direction: column;
+    }
+    .section3 .productive__container .stay__productive__bg{
+	    width: 100%;
+	    max-width: 600px;
+	    height: auto;
+	    padding-right: 0;
+	    margin-bottom: 3rem;
+    }
+    .section3 .productive__container .productive__text h4{
+        font-size: 1.5rem;
+    }
+    /* Third Section Ends */
+
+
+    /* Fourth Section */
+    .section4 .testimonial__grid__container{
+	    flex-direction: column;
+    }
+    .section4 .testimonial__grid__container .icon5{
+	    display: none;
+    }
+    .section4 .testimonial__grid__container .grid__item{
+	    margin: 1rem 0;
+    }
+    /* Fourth Section Ends */
 }
-footer .footer__grid__container .grid__item .logo h2{
-	font-weight: 500;
-	font-family: var(--Raleway-fonts);
-	margin-left: 1rem;
+
+
+
+
+@media only screen and (max-width: 768px){
+	/* Navbar Section */
+	.navbar{
+	    padding: 1rem 1rem;
+    }
+	.navbar .nav__logo .logo{
+	    width: 3rem;
+	    height: 2rem;
+    }
+    .navbar .nav__logo h2{
+	    font-size: 1.75rem;
+    }
+	.navbar .nav__links li{
+	    font-size: 0.75rem;
+	    margin-left: 2rem;
+    }
+    /* Navbar Section Ends */
+
+
+
+    /* First Section */
+    .section1{
+    	padding: 0 1rem 1rem;
+    }
+    .section1 .files__container h2{
+    	font-size: 1.75rem;
+    }
+
+    .section1 .files__container p{
+	    font-size: 0.75rem;
+    }
+    .section1 .files__container .btn{
+	    height: 60px;
+	    width: 250px;
+	    font-size: 0.875rem;
+    }
+    /* First Section Ends */
+
+
+
+    /* Second Section */
+    .section2{
+    	padding: 0 1rem 1rem;
+    }
+    .section2 .flex__container .flex__boxes .flex__item img{
+	    width: 50px;
+	    height: 50px;
+    }
+    .section2 .flex__container .flex__boxes .flex__item h3{
+     	font-size: 1rem;
+    }
+    .section2 .flex__container .flex__boxes .flex__item p{
+	    font-size: 0.75rem;
+    }
+    /* Second Section Ends */
+
+
+
+    /* Third Section */
+    .section3{
+    	padding: 0 1rem 1rem;
+    }
+    .section3 .productive__container .productive__text h4{
+        font-size: 1.25rem;
+    }
+    .section3 .productive__container .productive__text p{
+        font-size: 0.75rem;
+    }
+    /* Third Section Ends */
+
+
+
+    /* Fourth Section */
+    .section4{
+    	padding: 0 1rem 1rem;
+    }
+    /* Fourth Section */
+
+
+
+    /* Fifth Section */
+    .section5{
+    	padding: 0 1rem 1rem;
+    }
+    .section5 .signup__container{
+	    padding: 1.5rem 1rem;
+	    height: auto;
+    }
+    .section5 .signup__container input[type="email"]{
+    	margin-bottom: 1rem;
+    }
+    .section5 .signup__container button{
+	    max-width: 400px;
+	    margin-left: 0;
+    }
+    /* Fifth Section Ends */
+
+
+    /* Footer */
+    footer .footer__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    footer .fa{
+    	width: 100%;
+    	text-align: center;
+    }
+    /* Footer Ends */
 }
-footer .footer__grid__container .grid__item .location{
-	display: flex;
-}
-footer .footer__grid__container .grid__item .location p{
-	margin-left: 1rem;
-}
-footer .footer__grid__container .telephone{
-	display: flex;
-	align-items: center;
-}
-footer .footer__grid__container .email{
-	display: flex;
-	align-items: center;
-}
-footer .footer__grid__container .telephone p,.email p{
-	margin-left: 2rem;
-}
-footer .footer__grid__container .col__align{
-	margin-left: 3rem;
-}
-footer .footer__grid__container .row__align{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
+
+
+
+
+
+
+
+

@@ -4,10 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css" />
-    <script src="https://kit.fontawesome.com/ad7b718e42.js" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <title>First Capstone Project</title>   
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico.png">
+    <title>Fylo</title>   
   </head>
   <body>
 
@@ -24,12 +22,13 @@
         <li>sign in</li>
     	</ul>
     </nav> 
+    <!-- Navbar Section Ends -->
 
 
     <!-- First Section -->
     <section class="section1">
     	<div class="files__container">
-    		<img src="./images/img1.jpg" alt="file image">
+    		<img src="./images/intro-bg.png" alt="file image">
     		<h2>All your files in one secure location, <br>accessible anywhere.</h2>
     		<p>Fylo stores all your most important files in one secure location. 
           <br>Access them wherever you need, share and collaborate with <br>friends family, 
@@ -37,6 +36,7 @@
           <button class="btn">get started</button>
     	</div>
     </section>
+    <!-- First Section Ends -->
 
 
     <!-- Second Section -->
@@ -60,7 +60,7 @@
         
 
         <div class="flex__boxes">
-          <div class="flex__item">
+          <div class="flex__item mt2">
             <img src="./images/icon2.svg" alt="security icon">
             <h3>Security you can trust</h3>
             <p>2-factor authentication and user-controlled encryption are <br>just a 
@@ -76,12 +76,13 @@
         </div>
     	</div>
     </section>
+    <!-- Second Section Ends -->
 
 
     <!-- Third Section -->
     <section class="section3">
     	<div class="productive__container">
-    		<img src="./images/img2.jpg" alt="">
+    		<img src="./images/stay-productive-bg.png" alt="" class="stay__productive__bg">
 
     		<div class="productive__text">
     			<h4>Stay productive, wherever you are</h4>
@@ -89,10 +90,15 @@
     			<br>covered for all of your file storage needs.</p>
     			<p>Securely share files and folders with friends, family and colleagues 
     			for live <br>collaborations. No email attachments required.</p>
-    			<a href="#">See how Fylo works <ion-icon name="arrow-forward-circle-sharp" class="arrow__icon"></ion-icon></a>
+
+    			<div class="link">
+            <a href="#">See how Fylo works</a>
+            <img src="./images/arrow-icon.svg" class="arrow__icon">   
+          </div>
     		</div>
     	</div>
     </section>
+     <!-- Third Section Ends -->
 
 
      <!-- Fourth Section -->
@@ -103,7 +109,7 @@
      			making the switch our team has become a well-oiled collaboration machine.</p>
 
      			<div class="testimonial__profile">
-     				<img src="./images/satish-demo.png" alt="satish image" width="25px">
+     				<img src="./images/profile-1.jpg" alt="satish image">
      				
             <div class="testimonial__title">
               <h5>Satish Patel</h5>
@@ -117,7 +123,7 @@
      			making the switch our team has become a well-oiled collaboration machine.</p>
 
      			<div class="testimonial__profile">
-     				<img src="./images/bruce-demo.png" alt="bruce image" width="25px">
+     				<img src="./images/profile-2.jpg" alt="bruce image">
      				
             <div class="testimonial__title">
               <h5>Bruce McKenzie</h5>
@@ -131,7 +137,7 @@
      			making the switch our team has become a well-oiled collaboration machine.</p>
 
      			<div class="testimonial__profile">
-     				<img src="./images/iva-demo.png" alt="iva image" width="25px">
+     				<img src="./images/profile-3.jpg" alt="iva image">
      				
             <div class="testimonial__title">
               <h5>Iva Boyd</h5>
@@ -141,79 +147,63 @@
      		</div>
      	</div>
      </section>
+     <!-- Fourth Section Ends -->
 
 
      <!-- Fifth Section -->
      <section class="section5">
      	<div class="signup__container">
      		<h3>Get early access today</h3>
-            <p>it only takes a minute to sign up and our free starter tier is extremely generous. 
-            if you have any questions, our support team would be happy to help you.</p>
+        <p>it only takes a minute to sign up and our free starter tier is extremely generous. 
+        if you have any questions, our support team would be happy to help you.</p>
             
-            <div class="responses">
-              <input type="email" placeholder="email@example.com">
-              <button>get started for free</button>
-            </div>
+        <input type="email" placeholder="email@example.com" required>
+        <button>get started for free</button>
      	</div>
      </section>
+     <!-- Fifth Section Ends -->
 
 
      <!-- Footer Section -->
      <footer>
-     	<div class="footer__grid__container">
+       <div class="footer__container">
+         <div class="item">
+           <div class="phone__contact">
+             <i class="fa-solid fa-phone-volume"></i>
+             <p>+1-543-123-4567</p>
+           </div>
+           <div class="email__contact">
+             <i class="fa-solid fa-square-envelope"></i>
+             <p>example@fylo.com</p>
+           </div>
+         </div>
 
-        <!-- Grid One -->
-     		<div class="grid__item xl__width">
-     			<div class="logo">
-     				<ion-icon name="layers-sharp" class="logo"></ion-icon>
-    		    <h2>Fylo</h2>
-     			</div>
+         <div class="item col">
+           <a href="">about us</a>
+           <a href="">jobs</a>
+           <a href="">press</a>
+           <a href="">blog</a>
+         </div>
 
-    		  <div class="location">
-    		    <i class="fa-solid fa-location-dot"></i>
-    		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua</p>
-    		  </div>
-     		</div>
-        
-        <!-- Grid Two -->
-        <div class="grid__item lg__width">
-          <div class="telephone">
-            <!-- <ion-icon name="call-outline"></ion-icon> -->
-            <i class="fa-solid fa-phone-volume"></i>
-            <p>+1-543-123-4567</p>
-          </div>
+         <div class="item col">
+           <a href="">contact us</a>
+           <a href="">terms</a>
+           <a href="">privacy</a>
+         </div>
 
-          <div class="email">
-            <!-- <ion-icon name="logo-markdown"></ion-icon> -->
-            <i class="fa-solid fa-square-envelope"></i>
-            <p>example@fylo.com</p>
-          </div>
-        </div>
-        
-        <!-- Grid Three -->
-        <div class="grid__item col__align sm__width">
-          <p>About Us</p>
-          <p>Jobs</p>
-          <p>Press</p>
-          <p>Blog</p>
-        </div>
-
-        <!-- Grid Four -->
-        <div class="grid__item col__align sm__width">
-          <p>Contact Us</p>
-          <p>Terms</p>
-          <p>Privacy</p>
-        </div>
-
-        <!-- Grid Five -->
-        <div class="grid__item row__align sm__width">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter-square"></i>
-          <i class="fa-brands fa-instagram-square"></i>
-        </div>
-     	</div>
+         <div class="item fa">
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-twitter-square"></i>
+           <i class="fa-brands fa-instagram-square"></i>
+         </div>
+       </div>
      </footer>
-      	
+     <!-- Footer Section Ends -->
+
+
+     <script src="https://kit.fontawesome.com/ad7b718e42.js" crossorigin="anonymous"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   </body>
 </html>
