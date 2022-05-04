@@ -93,12 +93,16 @@ body::-webkit-scrollbar-thumb {
 
 
 
+.container{
+	padding: 1rem 1rem;
+}
+
+
 
 /* First Section */
 .section1{
     width: 100%;
     height: auto;
-    padding: 0 2rem 1rem;
     margin-bottom: 8rem;
 }
 .section1 .files__container{
@@ -153,7 +157,6 @@ body::-webkit-scrollbar-thumb {
 .section2{
 	width: 100%;
 	height: auto;
-	padding: 0 2rem 1rem;
 	margin-bottom: 8rem;
 }
 .section2 .flex__container{
@@ -197,7 +200,6 @@ body::-webkit-scrollbar-thumb {
 .section3{
 	width: 100%;
 	height: auto;
-	padding: 0 2rem 1rem;
 	margin-bottom: 8rem;
 }
 .section3 .productive__container{
@@ -255,7 +257,6 @@ body::-webkit-scrollbar-thumb {
 .section4{
 	width: 100%;
 	height: auto;
-	padding: 0 2rem 1rem;
 	margin-bottom: 8rem;
 }
 .section4 .testimonial__grid__container{
@@ -306,7 +307,6 @@ body::-webkit-scrollbar-thumb {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 0 2rem 1rem;
 }
 .section5 .signup__container{
 	height: 226px;
@@ -516,9 +516,6 @@ footer .footer__container .col{
 
 
     /* First Section */
-    .section1{
-    	padding: 0 1rem 1rem;
-    }
     .section1 .files__container h2{
     	font-size: 1.75rem;
     }
@@ -536,9 +533,6 @@ footer .footer__container .col{
 
 
     /* Second Section */
-    .section2{
-    	padding: 0 1rem 1rem;
-    }
     .section2 .flex__container .flex__boxes .flex__item img{
 	    width: 50px;
 	    height: 50px;
@@ -554,9 +548,6 @@ footer .footer__container .col{
 
 
     /* Third Section */
-    .section3{
-    	padding: 0 1rem 1rem;
-    }
     .section3 .productive__container .productive__text h4{
         font-size: 1.25rem;
     }
@@ -567,18 +558,7 @@ footer .footer__container .col{
 
 
 
-    /* Fourth Section */
-    .section4{
-    	padding: 0 1rem 1rem;
-    }
-    /* Fourth Section */
-
-
-
     /* Fifth Section */
-    .section5{
-    	padding: 0 1rem 1rem;
-    }
     .section5 .signup__container{
 	    padding: 1.5rem 1rem;
 	    height: auto;
