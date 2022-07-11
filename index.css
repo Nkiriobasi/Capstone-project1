@@ -402,9 +402,6 @@ footer .footer__container{
     width: inherit;
 
 }
-footer .footer__container .item{
-	/*margin: 0 5rem;*/
-}
 .phone__contact, .email__contact{
 	display: flex;
 	flex-direction: row;
